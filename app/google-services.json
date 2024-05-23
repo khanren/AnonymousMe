@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "542262375457",
+    "firebase_url": "https://anonymous-me-63f82-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "anonymous-me-63f82",
+    "storage_bucket": "anonymous-me-63f82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542262375457:android:4973ba8d9ac4cfd81f5f60",
+        "android_client_info": {
+          "package_name": "com.example.anonymousme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542262375457-q0sp79fi73cgbf9d48i6ca72vnlfg1ed.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anonymousme",
+            "certificate_hash": "dd04e6b3a8abcf590310f5e266ec6147802c2e91"
+          }
+        },
+        {
+          "client_id": "542262375457-9siq3b97kbth6fm2gl049mpmcod9vpgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA23CV8G_ECbh-WDXOgf5z6fI5FIJs7_hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542262375457-9siq3b97kbth6fm2gl049mpmcod9vpgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

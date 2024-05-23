@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30333B"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/TopPicks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:alpha=".5"
+        android:text="Anonymous Me"
+        android:textColor="#bfc7d1"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myToolbar_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="25dp"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/myToolbar_catagory"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/img_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/logoutbtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/img_8"
+        app:layout_constraintStart_toEndOf="@+id/myToolbar_catagory"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="324dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myToolbar_tittle" />
+
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#A3AFBD"
+        android:text="Edit Name"
+        android:textColor="#2f3039"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="418dp"
+        android:layout_height="620dp"
+        android:layout_marginBottom="-10dp"
+        android:backgroundTint="#d9dee4"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="390dp"
+            android:layout_height="480dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="50dp" />
+
+        <Button
+            android:id="@+id/DltAccountBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="540dp"
+            android:backgroundTint="#8895a9"
+            android:text="Delete Account"
+            android:textColor="#30333b"
+            android:textSize="15dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

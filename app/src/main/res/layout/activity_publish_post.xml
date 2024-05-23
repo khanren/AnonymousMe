@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30333B">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:alpha=".5"
+        android:text="Anonymous Me"
+        android:textColor="#bfc7d1"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="Post"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="420dp"
+        android:layout_height="745dp"
+        android:layout_marginBottom="-10dp"
+        android:backgroundTint="#d9dee4"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Title"
+        android:textColor="#2f3039"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="132dp" />
+
+        <EditText
+        android:id="@+id/postTitleEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="#30333B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <GridLayout
+        android:id="@+id/ImageGrid"
+        android:layout_width="379dp"
+        android:layout_height="192dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="155dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+        <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="180dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="120dp"
+        android:backgroundTint="#A3AFBD"
+        android:text="Select Image"
+        android:textColor="#30333b"
+        app:layout_constraintTop_toBottomOf="@+id/ImageGrid" />
+
+        <TextView
+        android:id="@+id/Content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="30dp"
+        android:text="Content"
+        android:textColor="#2f3039"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/postContentEditText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+        android:id="@+id/postContentEditText"
+        android:layout_width="369dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="#30333B" />
+
+        <Button
+        android:id="@+id/publishPostButton"
+        android:layout_width="193dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#A3AFBD"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="120dp"
+        android:text="Publish"
+        android:textColor="#30333b"
+        tools:layout_editor_absoluteY="794dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
