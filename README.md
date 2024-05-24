@@ -1,4 +1,4 @@
-# AnonymousMe-Final-Year-Project
+# Anonymous Me-Final-Year-Project
 
 Anonymous Me was created to give Sunway University students a private forum for anonymously sharing their ideas, experiences, and views. The main goal of the app is to make it possible for kids tospeak truthfully and openly without worrying about criticism or repercussions. We have created aregistration procedure that requires students to enter their student ID to create an account to ensure
 that only Sunway students can use the app. This verification procedure aids in preventing non-students from creating an account, such as instructors, parents, or students from different campuses.
